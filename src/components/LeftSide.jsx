@@ -3,10 +3,26 @@
 function LeftSide() {
   return (
     <div className="left-cont">
+{/* left upper part */}
       <div className="upper">
+        {/* logo */}
         <div className="logo-upper">
-
         <img src="lisa-logo.png" width={75} height={75} alt="lisa logo" /><span>LisaBot</span>
+        </div>
+        {/* new chat */}
+        <div className="newChat">
+          <p><i className="fas fa-plus"></i> New chat</p>
+        </div>
+        {/* dummy messages */}
+        <div className="dummy-msg">
+          <p>Hi how are you? <i className="fas fa-share"></i></p>
+          <p>Who is the president of India? <i className="fas fa-share"></i></p>
+        </div>
+      </div>
+{/* footer part */}
+      <div className="footer">
+        <div className="user">
+          monalisa
         </div>
       </div>
     </div>

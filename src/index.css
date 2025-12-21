@@ -20,7 +20,7 @@ body{
 }
 .logo-upper{
   display: flex;
-  /* justify-content: center; */
+
   align-items: center;
 }
 .logo-upper span{
@@ -28,10 +28,10 @@ body{
 }
 .right-cont{
   flex: 9;
-  /* background-color: rebeccapurple; */
 }
 .upper{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -39,4 +39,35 @@ body{
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
   margin-right: 1rem;
+}
+.newChat{
+  background-color: rgb(91, 88, 88);
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.newChat p{
+  font-size: 20px;
+  padding: 0.4rem;
+  color: aliceblue;
+}
+.dummy-msg {
+  /* border: 1px solid rebeccapurple; */
+  width: 100%;
+}
+.dummy-msg p{
+  border: 1px solid rgb(86, 84, 84);
+  text-align: center;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.dummy-msg p:active {
+  transform: scale(0.95);
+  transition: transform 0.1s ease;
 }
