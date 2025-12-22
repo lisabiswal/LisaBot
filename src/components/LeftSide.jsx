@@ -4,6 +4,9 @@ function LeftSide() {
   return (
     <div className="left-cont">
 {/* left upper part */}
+<div className="pad">
+
+
       <div className="upper">
         {/* logo */}
         <div className="logo-upper">
@@ -22,8 +25,9 @@ function LeftSide() {
 {/* footer part */}
       <div className="footer">
         <div className="user">
-          monalisa
+          <p>User <i className="fas fa-user-astronaut"></i></p>
         </div>
+      </div>
       </div>
     </div>
   )

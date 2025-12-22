@@ -14,9 +14,14 @@ body{
   display: flex;
 }
 .left-cont{
+  position: relative;
+  height: 100vh;
   flex: 3;
-  padding: 2.2rem;
+  
   border-right: 1px solid rgb(93, 92, 92);
+}
+.left-cont .pad{
+  padding: 1.8rem;
 }
 .logo-upper{
   display: flex;
@@ -56,6 +61,7 @@ body{
 .dummy-msg {
   /* border: 1px solid rebeccapurple; */
   width: 100%;
+  cursor: pointer;
 }
 .dummy-msg p{
   border: 1px solid rgb(86, 84, 84);
@@ -70,4 +76,76 @@ body{
 .dummy-msg p:active {
   transform: scale(0.95);
   transition: transform 0.1s ease;
+}
+.footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* right: 0; */
+  width: 100%;
+}
+.footer .user{
+  background-color: rgb(35, 35, 40);
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 20px;
+  color: rgb(221, 219, 219);
+  border-top: 1px solid rgb(86, 84, 84);
+}
+.user p{
+  display: flex;
+  justify-content: space-between;
+
+}
+.right-cont{
+  position: relative;
+}
+.send-msg {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  /* background-color: antiquewhite; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.send-msg input {
+  width: 45rem;
+  height: 3rem;
+  margin-right: 0.5rem;
+  background-color: rgba(67, 66, 66, 0.183);
+  outline: none;
+  /* outline-color: rgb(202, 32, 32); */
+  border: 1px solid gray;
+  border-radius: 4px;
+  color: rgb(218, 216, 216);
+  padding: 20px 10px;
+  font-size: 20px;
+}
+.send-msg input:focus{
+  border: 1px solid rgb(185, 181, 181);
+}
+.send-msg .send:active{
+  background-color: rgb(98, 97, 97);
+  transform: ease 2s;
+}
+.send-msg .send {
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+.send-msg .send{
+  display: inline-block;
+  background-color: rgb(84, 83, 83);
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.send-msg .send i{
+  font-size: 23px;
 }
