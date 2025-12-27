@@ -194,3 +194,138 @@ body{
   padding: 1rem;
   border-radius: 5px;
 }
+.reg{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  padding: 2rem;
+  /* border: 1px solid gray; */
+}
+.reg form{
+  /* border: 1px solid red; */
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.reg form input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.3rem;
+  font-size: larger;
+  outline: none;
+  background-color: #7574748d;
+  border: 1px solid gray;
+  color: aliceblue;
+
+  /* 3D look */
+  box-shadow:
+    inset 0 2px 4px rgba(0, 0, 0, 0.6),
+    inset 0 -1px 2px rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+  transition: all 0.15s ease;
+}
+
+/* Focus effect (feels pressed-in) */
+.reg form input:focus {
+  border-color: #858789;
+  box-shadow:
+    inset 0 3px 6px rgba(0, 0, 0, 0.8),
+    0 0 0 1px rgba(57, 62, 69, 0.4);
+}
+
+.reg form label{
+  font-size: larger;
+}
+.reg form button {
+  background-color: #0c0e0b;
+  height: 2.5rem;
+  font-size: larger;
+  cursor: pointer;
+  color: rgb(244, 238, 238);
+  margin-top: 2rem;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 2px;
+  font-weight: 700;
+
+  /* 3D look */
+  box-shadow: 
+    0 4px 0 #3a3a3a,
+    0 8px 15px rgba(0, 0, 0, 0.6);
+  transition: all 0.15s ease;
+}
+
+.reg form button:active {
+  transform: translateY(3px);
+  box-shadow: 
+    0 2px 0 #3a3a3a,
+    0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.devider {
+  width: 25rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0;
+  margin: 0 auto;
+}
+
+.devider hr {
+  flex: 1;
+  border: none;
+  height: 1px;
+  background: #ccc;
+}
+
+.devider span {
+  font-size: 14px;
+  color: #777;
+  text-transform: lowercase;
+}
+.google{
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+.google button {
+  width: 25rem;
+  height: 2rem;
+
+  background: linear-gradient(180deg, #2a2a2a, #141414);
+  color: #f5f5f5;
+  border: 1px solid #3a3a3a;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+
+  /* 3D effect */
+  box-shadow:
+    0 3px 0 #0a0a0a,
+    0 6px 12px rgba(0, 0, 0, 0.6);
+
+  transition: all 0.15s ease;
+}
+
+.google button:active {
+  transform: translateY(2px);
+  box-shadow:
+    0 1px 0 #0a0a0a,
+    0 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+.reg-heading {
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  word-spacing: 0.3rem;
+  letter-spacing: 0.3rem;
+  /* margin-top: 24px; */
+  padding: 2rem;
+  color: #e5e7eb;
+  background-color: #141514;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+}
+
+

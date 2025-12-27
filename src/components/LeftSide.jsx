@@ -1,6 +1,6 @@
+import DummyMessages from "./DummyMess"
 
-
-function LeftSide() {
+function LeftSide({setMess}) {
   return (
     <div className="left-cont">
 {/* left upper part */}
@@ -17,10 +17,7 @@ function LeftSide() {
           <p><i className="fas fa-plus"></i> New chat</p>
         </div>
         {/* dummy messages */}
-        <div className="dummy-msg">
-          <p>Hi how are you? <i className="fas fa-share"></i></p>
-          <p>Who is the president of India? <i className="fas fa-share"></i></p>
-        </div>
+        <DummyMessages setMess={setMess}/>
       </div>
 {/* footer part */}
       <div className="footer">

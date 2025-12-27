@@ -3,10 +3,10 @@
 import { useEffect, useRef, useState } from "react"
 import { askGPT } from "../gpt"
 
-function RightSide() {
+function RightSide({mess, setMess}) {
 
   const [inp, setInp] = useState("")
-  const [mess, setMess] = useState([])
+  // const [mess, setMess] = useState([])
   const sendMess = async () => {
     if (!inp.trim()) return
     setMess(prev => [...prev, { role: "user", text: inp }])
@@ -14,11 +14,18 @@ function RightSide() {
     setInp(" ")
     const reply = await askGPT(userInp)
     setMess(prev => [...prev, { role: "bot", text: reply }]);
+    
   }
+  const handleKeyDown = e => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      sendMess();
+    }
+  };
   const chatEnd = useRef(null)
-  useEffect(()=>{
-    chatEnd.current?.scrollIntoView({behavior: "smooth"})
-  },[mess])
+  useEffect(() => {
+    chatEnd.current?.scrollIntoView({ behavior: "smooth" })
+  }, [mess])
 
 
 
@@ -38,13 +45,20 @@ function RightSide() {
       </div>
       <div className="send-msg">
 
-        <input type="text" onChange={(e)=>setInp(e.target.value)} value={inp} /><span className="send" onClick={sendMess}><i className="fas fa-paper-plane"></i></span>
+        <input type="text"
+        onKeyDown={handleKeyDown}
+        onChange={(e) => setInp(e.target.value)} 
+        value={inp} />
+        <span className="send" onClick={sendMess}>
+          <i className="fas fa-paper-plane"></i>
+        </span>
+
       </div>
 
     </div>
   )
 }
-function User({text}) {
+function User({ text }) {
   return (
     <>
       <div className="user-box">
@@ -56,7 +70,7 @@ function User({text}) {
     </>
   )
 }
-function Bot({text}) {
+function Bot({ text }) {
   return (
     <>
       <div className="user-box">
