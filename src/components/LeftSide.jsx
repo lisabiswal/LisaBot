@@ -1,12 +1,11 @@
 import DummyMessages from "./DummyMess"
-
+import { auth } from "../firebase"
 function LeftSide({setMess}) {
+  const user = auth.currentUser
   return (
     <div className="left-cont">
 {/* left upper part */}
 <div className="pad">
-
-
       <div className="upper">
         {/* logo */}
         <div className="logo-upper">
@@ -22,7 +21,7 @@ function LeftSide({setMess}) {
 {/* footer part */}
       <div className="footer">
         <div className="user">
-          <p>User <i className="fas fa-user-astronaut"></i></p>
+          <p>{user?.email || "user"} <i className="fas fa-user-astronaut"></i></p>
         </div>
       </div>
       </div>
