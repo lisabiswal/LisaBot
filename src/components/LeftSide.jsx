@@ -2,6 +2,7 @@ import DummyMessages from "./DummyMess"
 import { auth } from "../firebase"
 function LeftSide({setMess}) {
   const user = auth.currentUser
+  
   return (
     <div className="left-cont">
 {/* left upper part */}
@@ -12,7 +13,7 @@ function LeftSide({setMess}) {
         <img src="lisa-logo.png" width={75} height={75} alt="lisa logo" /><span>LisaBot</span>
         </div>
         {/* new chat */}
-        <div className="newChat">
+        <div className="newChat" onClick={() => setKey(prev => prev + 1)}>
           <p><i className="fas fa-plus"></i> New chat</p>
         </div>
         {/* dummy messages */}
