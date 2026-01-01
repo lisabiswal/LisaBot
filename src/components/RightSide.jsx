@@ -6,7 +6,6 @@ import { askGPT } from "../gpt"
 function RightSide({mess, setMess}) {
 
   const [inp, setInp] = useState("")
-  // const [mess, setMess] = useState([])
   const sendMess = async () => {
     if (!inp.trim()) return
     setMess(prev => [...prev, { role: "user", text: inp }])
