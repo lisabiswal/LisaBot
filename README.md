@@ -1,12 +1,47 @@
-# React + Vite
+# 🤖 LisaBot
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+LisaBot is a personal AI chatbot built to provide smart, human-like conversations through a clean and simple interface. It helps users ask questions, learn concepts, and get quick assistance in real time.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Real-time AI-powered chat 
+- Chat history support 
+- Context-aware responses  
+- Clean and minimal UI  
+- Fast and smooth performance  
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React, CSS, Firebase, node.js  
+- **AI:** google gemini api 
+- **Deployment:** render / varcel  
+
+## 🚀 How It Works
+
+1. User enters a message  
+2. Message is sent to the AI API  
+3. AI processes the input  
+4. Response is displayed in the chat  
+
+## ⚠️ Important Note
+
+If you see **“Something went wrong”**, it may be due to:
+- API token limit exceeded  
+- Invalid or inactive API key  
+
+Please try again later.
+
+## 🌱 Future Improvements
+  
+- Voice input/output  
+- Multi-language support  
+- Better UI animations  
+
+## 🧑‍💻 Author
+
+**Monalisa Biswal**  
+Frontend Developer  
+
+## ⭐ Support
+
+If you like this project, consider giving it a ⭐ on GitHub.
