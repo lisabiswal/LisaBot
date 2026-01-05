@@ -8,7 +8,7 @@ LisaBot is a personal AI chatbot built to provide smart, human-like conversation
 - Chat history support 
 - Context-aware responses  
 - Clean and minimal UI  
-- Fast and smooth performance   
+- Fast and smooth performance    
 
 ## 🛠️ Tech Stack
 
